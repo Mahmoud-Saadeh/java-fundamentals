@@ -54,7 +54,6 @@ public class Main {
 
             while (second == LocalDateTime.now().getSecond()){
                 speed = speed +1;
-                continue;
             }
 
             System.out.println(time + " " + speed/1000000 + " MHz" );
