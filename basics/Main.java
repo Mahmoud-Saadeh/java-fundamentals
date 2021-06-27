@@ -11,7 +11,7 @@ public class Main {
 
         int turtleCount = 0;
         System.out.println("I own " + turtleCount + " " + pluralize("turtle", turtleCount) + ".");
-        flipNHeads(1);
+        flipNHeads(3);
         clock();
     }
     public static String pluralize(String animalName,int animalNum){
@@ -36,6 +36,7 @@ public class Main {
                 trailNumber = trailNumber + 1;
             }else{
                 System.out.println("tails");
+                headNumber = 0;
                 trailNumber = trailNumber + 1;
             }
         }
