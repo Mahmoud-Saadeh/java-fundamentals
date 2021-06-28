@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
 public class Main {
     public static void main(String[] args) {
         int dogCount = 1;
@@ -11,40 +12,42 @@ public class Main {
 
         int turtleCount = 0;
         System.out.println("I own " + turtleCount + " " + pluralize("turtle", turtleCount) + ".");
-        flipNHeads(3);
+        flipNHeads(15);
         clock();
     }
-    public static String pluralize(String animalName,int animalNum){
-        if(animalNum > 1 || animalNum == 0){
+
+    public static String pluralize(String animalName, int animalNum) {
+        if (animalNum > 1 || animalNum == 0) {
             return animalName + "s";
-        }else {
+        } else {
             return animalName;
         }
     }
+
     //int flipNum
-    public static void flipNHeads(int flipNum){
+    public static void flipNHeads(int flipNum) {
         Random rand = new Random();
         float headTail;
         int headNumber = 0;
         int trailNumber = 0;
-        while (headNumber != flipNum){
+        while (headNumber != flipNum) {
             headTail = rand.nextFloat();
 
-            if (headTail >= 0.5){
+            if (headTail >= 0.5) {
                 System.out.println("heads");
                 headNumber = headNumber + 1;
                 trailNumber = trailNumber + 1;
-            }else{
+            } else {
                 System.out.println("tails");
                 headNumber = 0;
                 trailNumber = trailNumber + 1;
             }
         }
-        System.out.println("It took " +trailNumber +" "+ pluralize("flip",trailNumber) +" to flip "+ headNumber+ " head in a row.");
+        System.out.println("It took " + trailNumber + " " + pluralize("flip", trailNumber) + " to flip " + headNumber + " head in a row.");
     }
 
-    public static void clock(){
-        while (true){
+    public static void clock() {
+        while (true) {
             float speed = 0f;
             LocalDateTime now = LocalDateTime.now();
             int hour = now.getHour();
@@ -52,11 +55,11 @@ public class Main {
             int second = now.getSecond();
             String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
 
-            while (second == LocalDateTime.now().getSecond()){
-                speed = speed +1;
+            while (second == LocalDateTime.now().getSecond()) {
+                speed = speed + 1;
             }
 
-            System.out.println(time + " " + speed/1000000 + " MHz" );
+            System.out.println(time + " " + speed / 1000000 + " MHz");
 
         }
 
