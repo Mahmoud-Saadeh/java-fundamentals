@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="basiclibrary.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-28T18:10:14" hostname="LTUCSTUDENT-L13" time="0.026">
+<testsuite name="basiclibrary.LibraryTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-06-29T16:43:25" hostname="LTUCSTUDENT-L131" time="0.192">
   <properties/>
-  <testcase name="someLibraryMethodReturnsTrue()" classname="basiclibrary.LibraryTest" time="0.026"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="lowestAvg should return the lowest array in the parent array which is {55, 54, 60, 53, 59, 57, 61}" classname="basiclibrary.LibraryTest" time="0.133"/>
+  <testcase name="roll should return array of length 6" classname="basiclibrary.LibraryTest" time="0.008"/>
+  <testcase name="average should return the average of array equal to 5" classname="basiclibrary.LibraryTest" time="0.011"/>
+  <testcase name="tally should return the name that has the max. votes which is Bush." classname="basiclibrary.LibraryTest" time="0.001"/>
+  <testcase name="minMaxFromArrayOfArrays should return min &amp; max temp." classname="basiclibrary.LibraryTest" time="0.02"/>
+  <testcase name="containsDuplicates should return true or false" classname="basiclibrary.LibraryTest" time="0.014"/>
+  <system-out><![CDATA[{Min=51, Max=72}
+Low: 51
+High: 72
+Never saw temperature: 67
+Never saw temperature: 68
+Never saw temperature: 69
+Never saw temperature: 63
+{Min=51, Max=72}
+Low: 51
+High: 72
+Never saw temperature: 67
+Never saw temperature: 68
+Never saw temperature: 69
+Never saw temperature: 63
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
