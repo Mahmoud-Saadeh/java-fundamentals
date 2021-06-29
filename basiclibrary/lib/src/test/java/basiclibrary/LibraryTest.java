@@ -3,17 +3,37 @@
  */
 package basiclibrary;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LibraryTest {
     @Test
-    void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
+    @DisplayName("containsDuplicates should return true or false")
+    public void containsDuplicatesMethod() {
         int[] trueArr = {1, 2, 1, 4};
         int[] falseArr = {1, 2, 3, 4};
+
+
+        assertTrue(Library.containsDuplicates(trueArr), "containsDuplicates should return 'true'");
+        assertFalse(Library.containsDuplicates(falseArr), "containsDuplicates should return 'false'");
+
+    }
+
+    @Test
+    @DisplayName("average should return the average of array equal to 5")
+    public void averageMethod() {
         int[] avgArr = {10, 3, 3, 4};
+        assertEquals(5, Library.average(avgArr), "average should return the average of array equal to 5");
+    }
+    @Test
+    @DisplayName("lowestAvg should return the lowest array in the parent array which is {55, 54, 60, 53, 59, 57, 61}")
+    public void lowestAvgMethod() {
         int[][] weeklyMonthTemperatures = {
                 {66, 64, 58, 65, 71, 57, 60},
                 {57, 65, 65, 70, 72, 65, 51},
@@ -22,12 +42,41 @@ class LibraryTest {
         };
         int[] arrExpected = {55, 54, 60, 53, 59, 57, 61};
 
-        assertTrue(classUnderTest.containsDuplicates(trueArr), "containsDuplicates should return 'true'");
-        assertFalse(classUnderTest.containsDuplicates(falseArr), "containsDuplicates should return 'false'");
-        assertEquals(6, classUnderTest.roll(6).length, "roll should return array of length 6");
-        assertEquals(5, classUnderTest.average(avgArr), "average should return array average equal to 5");
-        assertArrayEquals(arrExpected, classUnderTest.lowestAvg(weeklyMonthTemperatures), "lowestAvg should return the lowest array in the parent array which is {55, 54, 60, 53, 59, 57, 61}");
+        assertArrayEquals(arrExpected, Library.lowestAvg(weeklyMonthTemperatures), "lowestAvg should return the lowest array in the parent array which is {55, 54, 60, 53, 59, 57, 61}");
 
+    }
+    @Test
+    @DisplayName("roll should return array of length 6")
+    public void rollMethod(){
+        assertEquals(6, Library.roll(6).length, "roll should return array of length 6");
+    }
 
+    @Test
+    @DisplayName("minMaxFromArrayOfArrays should return min & max temp.")
+    public void minMaxFromArrayOfArraysMethod(){
+        int[][] weeklyMonthTemperatures = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57}
+        };
+        assertEquals(72, Library.minMaxFromArrayOfArrays(weeklyMonthTemperatures).get("Max"), "minMaxFromArrayOfArrays should return 72 as max temp.");
+        assertEquals(51, Library.minMaxFromArrayOfArrays(weeklyMonthTemperatures).get("Min"), "minMaxFromArrayOfArrays should return 51 as min temp.");
+    }
+    @Test
+    @DisplayName("tally should return the name that has the max. votes which is Bush.")
+    public void tallyMethod(){
+        List<String> votes = new ArrayList<>();
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Shrub");
+        votes.add("Hedge");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Bush");
+
+        assertEquals("Bush",Library.tally(votes),"tally should return the name that has the max. votes which is Bush.");
     }
 }

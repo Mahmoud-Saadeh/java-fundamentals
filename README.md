@@ -12,3 +12,12 @@ This repo is for practicing Java starting from the very basics
    - average: accept an array of integer and return the average of that array
    - lowestAvg: accept an array of integer arrays and return the array with the lowest average
    - In the [test](basiclibrary/lib/src/test/java/basiclibrary/LibraryTest.java) file I have a test for every method
+1. In the [linter](linter/app/src/main/java/linter) folder in [App](linter/app/src/main/java/linter/App.java) file I have 1 method:
+   - missingSemicolon: this method accept a path to a file and check every line for missing semicolons and ignore the line if:
+     - line ends With }
+     - line ends With {
+     - line contains if
+     - line contains else
+     - line starts With //
+     - empty lines
+   - In the [test](linter/app/src/test/java/linter/AppTest.java) file I have a test for the method to check if the number of lines that have missing semicolons is right.
