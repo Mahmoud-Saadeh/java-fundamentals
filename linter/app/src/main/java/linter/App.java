@@ -14,20 +14,23 @@ import java.util.HashMap;
 
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         String ttt = File.separator;
+        String basePath = new File("").getCanonicalPath();
+//        String path = new File("src/main/resources/gates.js")
+//                .getAbsolutePath();
+        System.out.println("Working Directory = " + System.getProperty("user.dir"));
         Path p1;
         if (ttt.equals("\\")){
-            p1 = Paths.get(URI.create("file:///Users/STUDENT/401/java-fundamentals/linter/app/src/main/resources/gates.js"));
+            p1 = Paths.get(basePath+"/app/src/main/resources/gates.js");
         }else{
-            p1 = Paths.get("/mnt/c/Users/STUDENT/401/java-fundamentals/linter/app/src/main/resources/gates.js");
+            p1 = Paths.get(basePath+"/src/main/resources/gates.js");
         }
-
+        System.out.println(p1);
         missingSemicolon(p1);
     }
 
     public static HashMap<String, Integer> missingSemicolon(Path p1){
-        System.out.println(p1);
         int errorNum = 0;
         int lineNum = 0;
         try {
@@ -45,7 +48,8 @@ public class App {
                         && !line.contains("if")
                         && !line.contains("else")
                         && !line.startsWith("//")
-                        && !line.isBlank()) {
+                        && !line.isBlank()
+                ) {
                     errorNum = errorNum + 1;
                     System.out.println("Line " + lineNum + ": Missing semicolon.");
                 }
