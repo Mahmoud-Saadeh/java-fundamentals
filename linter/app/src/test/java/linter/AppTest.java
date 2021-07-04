@@ -8,25 +8,27 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URI;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class AppTest {
-    private static Path filePath(String file){
+    private static Path filePath(String file) throws IOException {
         String ttt = File.separator;
+        String basePath = new File("").getCanonicalPath();
         Path p1;
         if (ttt.equals("\\")){
-            p1 = Paths.get(URI.create("file:///Users/STUDENT/401/java-fundamentals/linter/app/src/test/resources/"+file));
+            p1 = Paths.get(basePath+"/src/test/resources/" + file);
         }else{
-            p1 = Paths.get("/mnt/c/Users/STUDENT/401/java-fundamentals/linter/app/src/test/resources"+file);
+            p1 = Paths.get(basePath+"/src/test/resources/gates.js" + file);
         }
         System.out.println(p1);
         return p1;
     }
     @Test
 //    @DisplayName("missingSemicolon should return 0 errors")
-    public void hasSemicolonNoErrors() {
+    public void hasSemicolonNoErrors() throws IOException {
         Path p1 = filePath("noErrors.js");
 
         int errorNum = App.missingSemicolon(p1).get("ErrorCount");
@@ -36,7 +38,7 @@ public class AppTest {
 
     @Test
 //    @DisplayName("missingSemicolon should return 1 error")
-    public void hasSemicolonOneErrors() {
+    public void hasSemicolonOneErrors() throws IOException {
         Path p1 = filePath("oneError.js");
         int errorNum = App.missingSemicolon(p1).get("ErrorCount");
         int LineCount = App.missingSemicolon(p1).get("LineCount");
@@ -45,7 +47,7 @@ public class AppTest {
 
     @Test
 //    @DisplayName("missingSemicolon should return 4 errors")
-    public void hasSemicolonFewErrors() {
+    public void hasSemicolonFewErrors() throws IOException {
         Path p1 = filePath("fewErrors.js");
         int errorNum = App.missingSemicolon(p1).get("ErrorCount");
         int LineCount = App.missingSemicolon(p1).get("LineCount");
@@ -54,7 +56,7 @@ public class AppTest {
 
     @Test
 //    @DisplayName("missingSemicolon should return 4 errors")
-    public void hasSemicolonManyErrors() {
+    public void hasSemicolonManyErrors() throws IOException {
         Path p1 = filePath("manyErrors.js");
         int errorNum = App.missingSemicolon(p1).get("ErrorCount");
         int LineCount = App.missingSemicolon(p1).get("LineCount");
@@ -62,7 +64,7 @@ public class AppTest {
     }
     @Test
 //    @DisplayName("missingSemicolon should return 4 errors")
-    public void emptyFile() {
+    public void emptyFile() throws IOException {
         Path p1 = filePath("empty.js");
 
         int LineCount = App.missingSemicolon(p1).get("LineCount");

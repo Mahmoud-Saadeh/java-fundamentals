@@ -5,49 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4393b04a-fb81-4fbc-8e25-fc174a648865" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__com_google_guava_guava_30_1_jre.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__org_checkerframework_checker_qual_3_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/modules/basiclibrary.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/modules/lib/basiclibrary.lib.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/modules/lib/basiclibrary.lib.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/modules/lib/basiclibrary.lib.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/classes/java/main/basiclibrary/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/classes/java/main/basiclibrary/Library.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/classes/java/test/basiclibrary/LibraryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/classes/java/test/basiclibrary/LibraryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/reports/tests/test/classes/basiclibrary.LibraryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/reports/tests/test/classes/basiclibrary.LibraryTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/reports/tests/test/packages/basiclibrary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/reports/tests/test/packages/basiclibrary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/test-results/test/TEST-basiclibrary.LibraryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/test-results/test/TEST-basiclibrary.LibraryTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/src/main/java/basiclibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/src/main/java/basiclibrary/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/src/test/java/basiclibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/src/test/java/basiclibrary/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/linter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linter/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/linter/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/linter/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +23,31 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="linter" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="linter" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -71,11 +61,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bitmap-transformer" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11 (2)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="linter.App" />
       <module name="linter.app.main" />
@@ -161,9 +155,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AppTest" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Gradle.AppTest.hasSemicolonOneErrors" />
         <item itemvalue="Gradle.AppTest.hasSemicolonNoErrors" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -177,5 +171,9 @@
       <updated>1624976366336</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
