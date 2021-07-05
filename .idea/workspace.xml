@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e1144fa-9176-4dc0-b201-fb9dae329542" name="Default Changelist" comment="README file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inheritance/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inheritance/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inheritance/lib/src/main/java/inheritance/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/inheritance/lib/src/main/java/inheritance/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inheritance/lib/src/main/java/inheritance/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/inheritance/lib/src/main/java/inheritance/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inheritance/lib/src/test/java/inheritance/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/inheritance/lib/src/test/java/inheritance/LibraryTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="4e1144fa-9176-4dc0-b201-fb9dae329542" name="Default Changelist" comment="README file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
