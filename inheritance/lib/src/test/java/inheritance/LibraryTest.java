@@ -39,8 +39,8 @@ public class LibraryTest {
         Restaurant restaurant = new Restaurant("Mahmoud", 200);
         assertEquals("RestaurantToSting should return 'Restaurant Mahmoud, has prices of 200$, and 0.0 stars rating'","Restaurant Mahmoud, has prices of 200$, and 0.0 stars rating", restaurant.toString());
     }
-    @Test public void AddReviewTest() {
-        Restaurant restaurant = new Restaurant("Malek",324);
+    @Test public void AddRestaurantReviewTest() {
+        Restaurant restaurant = new Restaurant("Malek",8);
         Restaurant restaurant2 = new Restaurant("Malek2",2);
 
         Review newReview = new Review("Mahmoud","I really didn't like this restaurant", 1,restaurant);
@@ -58,19 +58,114 @@ public class LibraryTest {
         ArrayList<Review> reviews = restaurant.getReviews();
         ArrayList<Review> reviews5 = restaurant2.getReviews();
         for (Review rev:reviews5) {
-            System.out.println("Reviews 2 List: " + rev.toString());
+            System.out.println("Restaurant Reviews 2 List: " + rev.toString());
         }
         for (Review rev:reviews) {
-            System.out.println("Reviews List: " + rev.toString());
+            System.out.println("Restaurant Reviews List: " + rev.toString());
         }
 
         assertEquals("review author should return 'Mahmoud'","Mahmoud", newReview.getAuthor());
-        assertEquals("review stars should return 1 stars",newReview.getStars()  , 1);
+        assertEquals("review stars should return 1 stars", 1, newReview.getStars());
         assertEquals("review body should return 'I really didn't like this restaurant'","I really didn't like this restaurant", newReview.getBody());
 
         assertEquals("restaurant name should return 'Malek'","Malek", newReview.getRestaurant().getName());
-//        assertEquals();
-        assertEquals("review stars should return 2 stars",newReview.getRestaurant().getStars()  , 2f,0.0002);
-        assertEquals("restaurant price should return '324'",324, newReview.getRestaurant().getPrice());
+        assertEquals("review stars should return 2 stars",2f,newReview.getRestaurant().getStars(),0.0002);
+        assertEquals("restaurant price should return '324'",8, newReview.getRestaurant().getPrice());
+        assertEquals("restaurant price should return '$$'","$$", newReview5.getRestaurant().numberOfDollarSigns());
+    }
+
+    /////////////////////////////////////////////////////////
+
+    @Test public void ShopConstTest() {
+        Shop shop = new Shop("Mahmoud", "this shop is big", 5);
+
+        assertEquals("shop name should return 'Mahmoud'","Mahmoud", shop.getName());
+        assertEquals("shop description should return this shop is big","this shop is big",shop.getDescription());
+        assertEquals("shop number should return 5",5, shop.getNumberOfDollarSigns());
+
+    }
+
+    @Test public void AddShopReviewTest() {
+        Shop shop = new Shop("Mahmoud", "this shop is big", 5);
+        Shop shop2 = new Shop("Malek", "this shop is small", 3);
+
+        Review newReview = new Review("Mahmoud","I really didn't like this shop", 1,shop);
+        Review newReview2 = new Review("Mahmoud2","I really did like this shop2", 4,shop2);
+
+        Review newReview3 = new Review("Malek","I really did like this shop", 3,shop);
+        Review newReview4 = new Review("Malek2","I really didn't like this shop2", 5,shop2);
+
+        shop.addReview(newReview);
+        shop.addReview(newReview3);
+
+        shop2.addReview(newReview2);
+        shop2.addReview(newReview4);
+
+        ArrayList<Review> reviews = shop.getReviews();
+        ArrayList<Review> reviews2 = shop2.getReviews();
+
+        for (Review rev:reviews2) {
+            System.out.println("Shop Reviews 2 List: " + rev.toString());
+            System.out.println("Shop Reviews 2 List: " + rev.getShop().toString());
+        }
+        for (Review rev:reviews) {
+            System.out.println("Shop Reviews List: " + rev.toString());
+            System.out.println("Shop Reviews List: " + rev.getShop().toString());
+        }
+
+        assertEquals("review name should return 'Mahmoud'","Mahmoud", newReview.getAuthor());
+        assertEquals("review stars should return 4 stars",4,newReview2.getStars());
+        assertEquals("review body should return 'I really did like this shop'","I really did like this shop", newReview3.getBody());
+        assertEquals("restaurant name should return 'Malek'","Malek", newReview4.getShop().getName());
+        assertEquals("review stars should return 2 stars","$$$$$",newReview3.getShop().numberOfDollarSigns());
+        assertEquals("restaurant description should return 'this shop is big'","this shop is big", newReview3.getShop().getDescription());
+    }
+
+    @Test public void AddRemoveMovieTest() {
+        Theater theater = new Theater("Amman Theater");
+        theater.setMovies("The Godfather");
+        theater.setMovies("Interstellar");
+        theater.setMovies("The lord of the rings");
+        theater.setMovies("Test");
+
+        assertEquals("theater should return 'The Godfather, Interstellar, The lord of the rings, Test'","The Godfather, Interstellar, The lord of the rings, Test",theater.toString());
+
+        theater.removeMovie("Test");
+
+        assertEquals("theater should return 'The Godfather, Interstellar, The lord of the rings'","The Godfather, Interstellar, The lord of the rings",theater.toString());
+        System.out.println(theater);
+    }
+
+    @Test public void AddTheaterReviewTest() {
+        Theater theater = new Theater("Amman Theater");
+
+        theater.setMovies("The Godfather");
+        theater.setMovies("Interstellar");
+        theater.setMovies("The lord of the rings");
+        theater.setMovies("Test");
+
+        Review newReview = new Review("Mahmoud","Test","I really didn't like this theater", 2,theater);
+        Review newReview2 = new Review("Mahmoud","I really didn't like this theater", 2,theater);
+
+        theater.addReview(newReview);
+        theater.addReview(newReview2);
+
+        ArrayList<Review> reviews = theater.getReviews();
+
+        for (Review rev:reviews) {
+            System.out.println("Theater Reviews List: " + rev.toString());
+            System.out.println("Theater Reviews List: " + rev.getTheater().toString());
+        }
+
+        assertEquals("review name should return 'Mahmoud'","Mahmoud", newReview.getAuthor());
+        assertEquals("review movie should return 'Test'","Test", newReview.getMovie());
+        assertEquals("review stars should return 2 stars",2,newReview.getStars());
+        assertEquals("review body should return 'I really didn't like this theater'","I really didn't like this theater", newReview.getBody());
+        assertEquals("restaurant name should return 'Amman Theater'","Amman Theater", newReview.getTheater().getName());
+
+        assertEquals("review name should return 'Mahmoud'","Mahmoud", newReview2.getAuthor());
+        assertEquals("review stars should return 2 stars",2,newReview2.getStars());
+        assertEquals("review body should return 'I really didn't like this theater'","I really didn't like this theater", newReview2.getBody());
+        assertEquals("restaurant name should return 'Amman Theater'","Amman Theater", newReview2.getTheater().getName());
     }
 }
