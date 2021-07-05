@@ -31,7 +31,7 @@ This repo is for practicing Java starting from the very basics
 
 ## Inheritance
 
-1. In the [inheritance](inheritance/lib/src/main/java/inheritance) folder I have 2 classes:
+1. In the [inheritance](inheritance/lib/src/main/java/inheritance) folder I have 4 classes and 2 interfaces:
     - [Restaurant](inheritance/lib/src/main/java/inheritance/Restaurant.java): In this class there is a constructor to define the variables and there are getters and setters 
         - there is an array list to store all the reviews for a restaurant
         - when a review is added the stars for that restaurant is going to change according to the average of the stars
